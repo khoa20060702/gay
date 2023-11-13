@@ -1,0 +1,71 @@
+
+/* không có thanh cuộn */
+.content-section {
+    overflow: hidden;
+  }
+/* kích thước ảnh */
+.content-section .game-cover img {
+    width: 210px;
+    height: 290px;
+  }
+.games-carousel {
+  max-width: 100%;
+  display: grid;
+  height: auto;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  grid-gap: 20px;
+}
+
+.games-carousel .game .game-cover {
+  transition: transform 0.1s ease;
+}
+
+.games-carousel .game .game-cover:hover {
+  transform: translate(5px, -5px);
+  cursor: pointer;
+}
+.games-carousel .game .game-cover img {
+  height: 100%;
+  width: 100%;
+}
+
+.games-carousel .game .game-cover:hover img {
+  box-shadow: -15px 15px #657db078;
+}
+
+.games-carousel .game .game-info .game-title,
+.stream-carousel .stream .stream-text .stream-title,
+.video-carousel .video .video-text .video-title {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-weight: 600;
+  font-size: 15px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.game-info .game-viewership,
+.stream-text .stream-host,
+.stream-text .stream-game,
+.video-text .video-host,
+.video-text .video-game {
+  font-size: 14px;
+  margin-top: 0;
+  margin-bottom: 5px;
+  color: rgb(163, 163, 163);
+}
+/* tên */
+.title-highlight {
+  color: #6991c7;
+}
+
+.game-categories span {
+  background-image: linear-gradient(45deg, #c0c0c078, #a3bded76);
+  padding: 2px 0.8rem;
+  color: white;
+  border-radius: 100px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
